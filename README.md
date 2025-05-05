@@ -1,6 +1,5 @@
 
-**Real-Time Hand Gesture Recognition for YouTube Control Using CNN-LSTM and MediaPipe
-**
+**Real-Time Hand Gesture Recognition for YouTube Control Using CNN-LSTM and MediaPipe**
 
 **1. Problem Statement**  
 The goal of the project was to build a real-time hand gesture recognition system that could detect and classify specific hand gestures and map them to YouTube playback controls (e.g., play, pause, forward, rewind) using webcam input.
@@ -27,7 +26,7 @@ The goal of the project was to build a real-time hand gesture recognition system
   - The final output layer used **Softmax activation** to output probabilities over all gesture classes.
 
 
-**5. Training the Model ** 
+**5. Training the Model**
   - The model was trained using TensorFlow with:
   - **Categorical cross-entropy loss**
   - **Adam optimizer**
@@ -36,14 +35,14 @@ The goal of the project was to build a real-time hand gesture recognition system
   - Achieved high accuracy on validation data (you can mention the exact percentage here).
 
 
-**6. Real-Time Prediction Pipeline ** 
+**6. Real-Time Prediction Pipeline**
 - Integrated the trained model into a **real-time OpenCV loop** to capture frames from the webcam.
 - Each frame was passed through **MediaPipe Hands** to extract landmarks.
 - A buffer of the last 30 frames was maintained to create live sequences for prediction.
 - The model predicted gestures in real time and applied smoothing to avoid flickering.
 
 
-**7. Action Mapping with PyAutoGUI ** 
+**7. Action Mapping with PyAutoGUI**  
   - Recognized gestures were mapped to specific **YouTube actions**:
   - Play/Pause
   - Rewind
@@ -52,13 +51,13 @@ The goal of the project was to build a real-time hand gesture recognition system
   - Used PyAutoGUI to simulate keyboard shortcuts for controlling playback.
 
 
-**8. Evaluation & Results ** 
+**8. Evaluation & Results** 
 - Evaluated model using accuracy, confusion matrix, and classification report.
 - Real-time performance was tested under various lighting and hand positions to ensure robustness.
 - The model showed reliable gesture recognition with minimal latency.
 
 
-**9. Outcome **
+**9. Outcome**
 
 The system successfully recognized multiple hand gestures in real time and controlled YouTube playback without physical input devices. The project demonstrated practical integration of computer vision, deep learning, and user interaction using Python, MediaPipe, TensorFlow, and OpenCV.
 
