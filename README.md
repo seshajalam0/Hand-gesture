@@ -1,5 +1,5 @@
 
- **Real-Time Hand Gesture Recognition for YouTube Control Using CNN-LSTM and MediaPipe
+**Real-Time Hand Gesture Recognition for YouTube Control Using CNN-LSTM and MediaPipe
 **
 
 **1. Problem Statement**  
@@ -59,5 +59,6 @@ The goal of the project was to build a real-time hand gesture recognition system
 
 
 **9. Outcome **
+
 The system successfully recognized multiple hand gestures in real time and controlled YouTube playback without physical input devices. The project demonstrated practical integration of computer vision, deep learning, and user interaction using Python, MediaPipe, TensorFlow, and OpenCV.
 
